@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">projectAppAndroidCiisa</string>
+    <string name="app_name">IRON BOX FITNESS</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="logo">logo</string>
+    <string name="name_user_or_admin">Perfil Usuario</string>
+    <string name="profile_edition">Actualizar Datos</string>
+    <string name="profile_delete">Eliminar Cuenta</string>
+    <string name="current_email">Email</string>
+    <string name="current_phone">Telefono</string>
+
 </resources>

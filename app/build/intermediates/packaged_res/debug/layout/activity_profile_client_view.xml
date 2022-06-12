@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ScrollView
+        android:layout_width="399dp"
+        android:layout_height="731dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5pt"
+            android:layout_marginBottom="70pt"
+            android:orientation="vertical"
+            android:paddingLeft="16dp"
+            android:paddingTop="32dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="250dp">
+
+            <TextView
+                android:id="@+id/activity_name_user"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginBottom="1pt"
+                android:layout_weight="0"
+                android:fontFamily="monospace"
+                android:text="@string/name_user_or_admin"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/activity_name_user_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="juanito77"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="13dp" />
+
+            <TextView
+                android:id="@+id/activity_data_user_view"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="0"
+                android:text="Datos Actuales"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/activity_current_email"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1pt"
+                android:layout_weight="0"
+                android:fontFamily="serif"
+                android:text="@string/current_email"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/gray_primary" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_current_email_view"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginBottom="5pt"
+                android:layout_weight="1"
+                android:hint="juan_destroyer@gmail.com"
+                android:minHeight="48dp"
+                android:textColorHint="#616161" />
+
+            <TextView
+                android:id="@+id/activity_current_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1pt"
+                android:layout_weight="0"
+                android:fontFamily="serif"
+                android:text="@string/current_phone"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/gray_primary" />
+
+            <AutoCompleteTextView
+                android:id="@+id/activitcurrent_phone_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8pt"
+                android:layout_weight="1"
+                android:text="+1(917)8363252"
+                android:textColorHint="#616161" />
+
+            <TextView
+                android:id="@+id/activity_data_user_new"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_weight="0"
+                android:text="Ingresa Datos Nuevos"
+                android:textColor="@color/black" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_data_user_new_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8pt"
+                    android:hint="Email o Usuario"
+                    android:textColorHint="#616161" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_data_user_new_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8pt"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/activity_data_user_new_pswd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8pt"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/activity_login_til_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8pt"
+                android:layout_weight="0"
+                android:hint="Ingresa Password Actual"
+                android:inputType="textPassword" />
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="?android:attr/buttonCornerRadius">
+
+                <Button
+                    android:id="@+id/activity_login_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:backgroundTint="@color/red_primary"
+                    android:text="@string/profile_edition"
+                    app:cornerRadius="20dp" />
+
+                <Button
+                    android:id="@+id/activity_login_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:backgroundTint="@android:color/system_accent2_500"
+                    android:text="@string/profile_edition"
+                    app:cornerRadius="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="41dp">
+
+                <Button
+                    android:id="@+id/activity_profile_btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginBottom="16pt"
+                    android:backgroundTint="@color/gray_primary"
+                    android:text="cancelar"
+                    app:cornerRadius="20dp" />
+            </TableRow>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

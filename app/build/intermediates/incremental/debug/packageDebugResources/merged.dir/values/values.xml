@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <color name="black">#FF000000</color>
+    <color name="gray_primary">#333333</color>
+    <color name="gray_secondary">#e8e8e7</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red_primary">#981914</color>
+    <color name="red_secondary">#b91817</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">IRON BOX FITNESS</string>
+    <string name="current_email">Email</string>
+    <string name="current_phone">Telefono</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="logo">logo</string>
+    <string name="name_user_or_admin">Perfil Usuario</string>
+    <string name="profile_delete">Eliminar Cuenta</string>
+    <string name="profile_edition">Actualizar Datos</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <style name="Theme.TaskApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/red_primary</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
+        
+    </style>
+</resources>
